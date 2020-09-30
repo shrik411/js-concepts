@@ -51,36 +51,36 @@ All variable and function declarations are hoisted to the top of their scope. Va
 However, in contrast, undeclared variables do not exist until code assigning them is executed.
 Therefore, assigning a value to an undeclared variable implicitly creates it as a global variable when the assignment is executed. This means that, all undeclared variables are global variables.
 
-####var
+#### var
 The scope of a variable declared with the keyword var is its __current execution context__. This is either the enclosing function or for variables declared outside any function, global.  
 
-###Strict Mode
+### Strict Mode
 By enabling strict mode, we opt into a restricted variant of JavaScript that will not tolerate the usage of variables before they are declared.
 
 ```
 'use strict';
 ```
 
-##ES6
+## ES6
 
-####let
+#### let
 
 Before we start, to be noted is the fact that variables declared with the keyword let are block scoped and not function scoped.
 
 JavaScript hoists variables declared with es6 let and const. The difference in this case is how **it initialises them**.
 Variables declared with let and const remain uninitialised at the beginning of execution whilst variables declared with var are __initialised with a value of undefined__.
 
-##Hoisting functions
+## Hoisting functions
 
 JavaScript functions can be loosely classified as the following:
 
 1.Function declarations
 1.Function expressions
 
-###Function declarations
+### Function declarations
 Are hoisted completely to the top. Now, we can understand why JavaScript enable us to invoke a function seemingly before declaring it.
 
-###Function expressions
+### Function expressions
 Function expressions, however are not hoisted.
 
 ```
