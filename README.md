@@ -132,3 +132,41 @@ console.log(typeof double); // Output: function
 ### Hoisting classes
 
 Same as function
+
+### The modern mode, "use strict"
+For a long time, JavaScript evolved without compatibility issues. New features were added to the language while old functionality didn’t change.
+
+That had the benefit of never breaking existing code. But the downside was that any mistake or an imperfect decision made by JavaScript’s creators got stuck in the language forever.
+
+#### “use strict”
+The directive like "use strict" or 'use strict' is used to run the JS code in modern way. Will give the warning / errors while using old ways.
+
+```
+"use strict";
+
+// this code works the modern way
+```
+
+#### Ensure that “use strict” is at the top
+
+```
+alert("some code");
+// "use strict" below is ignored--it must be at the top
+
+"use strict";
+
+// strict mode is not activated
+```
+how to actually ```use strict``` in the console?
+
+```
+'use strict'; <Shift+Enter for a newline>
+//  ...your code
+<Enter to run>
+```
+
+__##'use strict' is unnecessary when using ES6 modules ('import' syntax). Its strict out of the box##__
+
+
+
+
